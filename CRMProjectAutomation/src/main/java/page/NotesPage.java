@@ -1,11 +1,15 @@
 package page;
 
+import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.FluentWait;
+
 import utility.ElementUtility;
 import utility.WaitUtility;
 
@@ -77,7 +81,8 @@ public class NotesPage {
 		elementutility.clearAndSendKey(searchBtn, searchvalue);
 		By verifynotes = By
 				.xpath("//table[@id='note-table']//tbody//tr//td//a[contains(text(),'" + searchvalue + "')]");
-		waitutility.waitForVisibility(verifynotes);
+		waitutility.waitForVisibilityOfElement(verifynotes);
+		//waitutility.waitForVisibility(verifynotes);
 		List<WebElement> notetable = driver.findElements(
 				By.xpath("//table[@id='note-table']//tbody//tr//td//a[contains(text(),'" + searchvalue + "')]"));
 		waitutility.waitForVisibility(notetable);
