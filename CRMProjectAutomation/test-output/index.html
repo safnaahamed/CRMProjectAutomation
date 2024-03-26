@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.ClientsTest" class="method navigator-link" hash-for-method="verifyAddClients">verifyAddClients</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,17 +114,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.LoginTest" class="method navigator-link" hash-for-method="verifyLogin(admin@admin.com, 12345678)">verifyLogin(admin@admin.com, 12345678)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.ProjectsTest" class="method navigator-link" hash-for-method="verifyProjectsCreation">verifyProjectsCreation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.ClientsTest" class="method navigator-link" hash-for-method="verifySearchClient">verifySearchClient</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -158,46 +134,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.ClientsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAddClients">
-                  </a> <!-- verifyAddClients -->
-                  <span class="method-name">verifyAddClients</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=123.0.6312.58)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25d25bab6a256c8b9b918b1cea24d296, sendKeysToElement {id=f.D8F99D42768117CCE2D5730068B73667.d.F1A147BFC131573D55896A8244DB2F82.e.135, value=[Ljava.lang.CharSequence;@27976390}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.58, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56174/devtoo..., se:cdpVersion: 123.0.6312.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (25d25bab6a256c8b9b918b1cea24d296)] -&gt; xpath: //input[@name=&apos;vat_number&apos;]//parent::div]
-Session ID: 25d25bab6a256c8b9b918b1cea24d296
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
-	at page.ClientsPage.enterClientDetails(ClientsPage.java:80)
-	at test.ClientsTest.verifyAddClients(ClientsTest.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -234,37 +170,6 @@ Session ID: 25d25bab6a256c8b9b918b1cea24d296
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLogin(admin@admin.com, 12345678)">
-                  </a> <!-- verifyLogin(admin@admin.com, 12345678) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">(admin@admin.com, 12345678)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.ClientsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchClient">
-                  </a> <!-- verifySearchClient -->
-                  <span class="method-name">verifySearchClient</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -281,9 +186,7 @@ Session ID: 25d25bab6a256c8b9b918b1cea24d296
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.LoginTest&quot;/&gt;
       &lt;class name=&quot;test.ProjectsTest&quot;/&gt;
-      &lt;class name=&quot;test.ClientsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -297,7 +200,7 @@ Session ID: 25d25bab6a256c8b9b918b1cea24d296
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -316,10 +219,6 @@ Session ID: 25d25bab6a256c8b9b918b1cea24d296
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">verifyEditProjects</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifyLogin</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -363,40 +262,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyEditProjects')
+data.setCell(0, 1, 'verifyProjectsCreation')
 data.setCell(0, 2, 'test.ProjectsTest')
-data.setCell(0, 3, 3887);
+data.setCell(0, 3, 3722);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyDeletecProjects')
+data.setCell(1, 1, 'verifyEditProjects')
 data.setCell(1, 2, 'test.ProjectsTest')
-data.setCell(1, 3, 3745);
+data.setCell(1, 3, 3221);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAddClients')
-data.setCell(2, 2, 'test.ClientsTest')
-data.setCell(2, 3, 3141);
+data.setCell(2, 1, 'verifyDeletecProjects')
+data.setCell(2, 2, 'test.ProjectsTest')
+data.setCell(2, 3, 2606);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyProjectsCreation')
+data.setCell(3, 1, 'verifySearchProjects')
 data.setCell(3, 2, 'test.ProjectsTest')
-data.setCell(3, 3, 2963);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifySearchProjects')
-data.setCell(4, 2, 'test.ProjectsTest')
-data.setCell(4, 3, 2188);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifySearchClient')
-data.setCell(5, 2, 'test.ClientsTest')
-data.setCell(5, 3, 1679);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyLogin')
-data.setCell(6, 2, 'test.LoginTest')
-data.setCell(6, 3, 1181);
+data.setCell(3, 3, 2396);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -422,98 +309,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.ProjectsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyLogin(admin@admin.com, 12345678)</span>
-                <span class="method-start">3229 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyLogin status=SUCCESS method=LoginTest.verifyLogin(java.lang.String,java.lang....)</span>
-                <span class="method-start">4415 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.ProjectsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">4558 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">verifyProjectsCreation</span>
-                <span class="method-start">7219 ms</span>
+                <span class="method-start">3921 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyProjectsCreation status=SUCCESS method=ProjectsTest.verifyProjectsCreation()[...)</span>
-                <span class="method-start">10184 ms</span>
+                <span class="method-start">7649 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">10327 ms</span>
+                <span class="method-start">7798 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchProjects</span>
-                <span class="method-start">12852 ms</span>
+                <span class="method-start">10205 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifySearchProjects status=SUCCESS method=ProjectsTest.verifySearchProjects()[pri:...)</span>
-                <span class="method-start">15041 ms</span>
+                <span class="method-start">12602 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">15173 ms</span>
+                <span class="method-start">12758 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyEditProjects</span>
-                <span class="method-start">18057 ms</span>
+                <span class="method-start">15191 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyEditProjects status=SUCCESS method=ProjectsTest.verifyEditProjects()[pri:3, i...)</span>
-                <span class="method-start">21945 ms</span>
+                <span class="method-start">18413 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">22068 ms</span>
+                <span class="method-start">18585 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDeletecProjects</span>
-                <span class="method-start">25865 ms</span>
+                <span class="method-start">22035 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyDeletecProjects status=SUCCESS method=ProjectsTest.verifyDeletecProjects()[pr...)</span>
-                <span class="method-start">29611 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.ClientsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">29740 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyAddClients</span>
-                <span class="method-start">32470 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyAddClients status=FAILURE method=ClientsTest.verifyAddClients()[pri:1, instan...)</span>
-                <span class="method-start">35616 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">35971 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySearchClient</span>
-                <span class="method-start">38447 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifySearchClient status=SUCCESS method=ClientsTest.verifySearchClient()[pri:1, in...)</span>
-                <span class="method-start">40127 ms</span>
+                <span class="method-start">24643 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

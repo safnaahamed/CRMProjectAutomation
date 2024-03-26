@@ -76,13 +76,13 @@ public class NotesPage {
 	public String doSearchNote(String searchvalue) {
 		waitutility.waitForVisibility(searchBtn);
 		elementutility.clearAndSendKey(searchBtn, searchvalue);
-		
-		List<WebElement> notetable = driver.findElements(
-				By.xpath("//table[@id='note-table']//tbody//tr//td//a[contains(text(),'" + searchvalue + "')]"));
-		waitutility.waitForVisibility(notetable);
 		By verifynotes = By
 				.xpath("//table[@id='note-table']//tbody//tr//td//a[contains(text(),'" + searchvalue + "')]");
 		waitutility.waitForVisibility(verifynotes);
+		List<WebElement> notetable = driver.findElements(
+				By.xpath("//table[@id='note-table']//tbody//tr//td//a[contains(text(),'" + searchvalue + "')]"));
+		waitutility.waitForVisibility(notetable);
+		
 		int row = elementutility.getTableDataRowCount(notetable, searchvalue);
 		String message = "";
 		if (row != 0) {

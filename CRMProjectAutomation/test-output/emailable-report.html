@@ -9,39 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,684</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">24,837</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.ClientsTest</td><td><a href="#m0">verifyAddClients</a></td><td rowspan="1">1711471333227</td><td rowspan="1">3141</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.ClientsTest</td><td><a href="#m1">verifySearchClient</a></td><td rowspan="1">1711471339204</td><td rowspan="1">1679</td></tr><tr class="passedodd"><td rowspan="1">test.LoginTest</td><td><a href="#m2">verifyLogin</a></td><td rowspan="1">1711471303986</td><td rowspan="1">1181</td></tr><tr class="passedeven"><td rowspan="4">test.ProjectsTest</td><td><a href="#m3">verifyDeletecProjects</a></td><td rowspan="1">1711471326622</td><td rowspan="1">3745</td></tr><tr class="passedeven"><td><a href="#m4">verifyEditProjects</a></td><td rowspan="1">1711471318814</td><td rowspan="1">3887</td></tr><tr class="passedeven"><td><a href="#m5">verifyProjectsCreation</a></td><td rowspan="1">1711471307976</td><td rowspan="1">2963</td></tr><tr class="passedeven"><td><a href="#m6">verifySearchProjects</a></td><td rowspan="1">1711471313609</td><td rowspan="1">2188</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">test.ProjectsTest</td><td><a href="#m0">verifyDeletecProjects</a></td><td rowspan="1">1711471879698</td><td rowspan="1">2606</td></tr><tr class="passedeven"><td><a href="#m1">verifyEditProjects</a></td><td rowspan="1">1711471872854</td><td rowspan="1">3221</td></tr><tr class="passedeven"><td><a href="#m2">verifyProjectsCreation</a></td><td rowspan="1">1711471861584</td><td rowspan="1">3722</td></tr><tr class="passedeven"><td><a href="#m3">verifySearchProjects</a></td><td rowspan="1">1711471867868</td><td rowspan="1">2396</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">test.ClientsTest#verifyAddClients</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=123.0.6312.58)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25d25bab6a256c8b9b918b1cea24d296, sendKeysToElement {id=f.D8F99D42768117CCE2D5730068B73667.d.F1A147BFC131573D55896A8244DB2F82.e.135, value=[Ljava.lang.CharSequence;@27976390}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.58, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56174/devtoo..., se:cdpVersion: 123.0.6312.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (25d25bab6a256c8b9b918b1cea24d296)] -&gt; xpath: //input[@name=&apos;vat_number&apos;]//parent::div]
-Session ID: 25d25bab6a256c8b9b918b1cea24d296
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
-	at page.ClientsPage.enterClientDetails(ClientsPage.java:80)
-	at test.ClientsTest.verifyAddClients(ClientsTest.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.ClientsTest#verifySearchClient</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.LoginTest#verifyLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin@admin.com</td><td>12345678</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test.ProjectsTest#verifyDeletecProjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">test.ProjectsTest#verifyEditProjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">test.ProjectsTest#verifyProjectsCreation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">test.ProjectsTest#verifySearchProjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">test.ProjectsTest#verifyDeletecProjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.ProjectsTest#verifyEditProjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.ProjectsTest#verifyProjectsCreation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.ProjectsTest#verifySearchProjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
