@@ -74,6 +74,7 @@ public class NotesPage {
 	}
 
 	public String doSearchNote(String searchvalue) {
+		waitutility.waitForVisibility(searchBtn);
 		elementutility.clearAndSendKey(searchBtn, searchvalue);
 		By verifynotes = By
 				.xpath("//table[@id='note-table']//tbody//tr//td//a[contains(text(),'" + searchvalue + "')]");
