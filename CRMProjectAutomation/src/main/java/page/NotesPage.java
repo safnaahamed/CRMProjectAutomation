@@ -58,7 +58,7 @@ public class NotesPage {
 	}
 
 	public void clickOnNotes() {
-		waitutility.waitForVisibility(notelink);
+		waitutility.waitForElementClick(notelink);
 		notelink.click();
 	}
 
@@ -81,8 +81,7 @@ public class NotesPage {
 		elementutility.clearAndSendKey(searchBtn, searchvalue);
 		By verifynotes = By
 				.xpath("//table[@id='note-table']//tbody//tr//td//a[contains(text(),'" + searchvalue + "')]");
-		waitutility.waitForVisibilityOfElement(verifynotes);
-		//waitutility.waitForVisibility(verifynotes);
+		waitutility.waitForVisibility(verifynotes);
 		List<WebElement> notetable = driver.findElements(
 				By.xpath("//table[@id='note-table']//tbody//tr//td//a[contains(text(),'" + searchvalue + "')]"));
 		waitutility.waitForVisibility(notetable);

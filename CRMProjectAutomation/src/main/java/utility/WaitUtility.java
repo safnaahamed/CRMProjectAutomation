@@ -15,16 +15,12 @@ public class WaitUtility {
 	
 	WebDriver driver;
 	WebDriverWait wait;
-	FluentWait<WebDriver> fwait;
 	
 	public WaitUtility(WebDriver driver){
 		
 		this.driver=driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-		this.fwait = new FluentWait<WebDriver>(driver)
-			       .withTimeout(Duration.ofSeconds(30))
-			       .pollingEvery(Duration.ofSeconds(5))
-			       .ignoring(NoSuchElementException.class);
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(65));
+		
 	}
 	
 	
@@ -53,12 +49,6 @@ public void waitForVisibility(By Locator) {
 		
 		
 		wait.until(ExpectedConditions.elementToBeClickable(Locator));
-	}
-
-public void waitForVisibilityOfElement(By Locator) {
-		
-		
-		fwait.until(ExpectedConditions.visibilityOfElementLocated(Locator));
 	}
 
 }
