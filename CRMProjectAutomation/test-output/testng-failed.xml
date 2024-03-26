@@ -7,14 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="test.NotesTest">
+      <class name="test.ClientsTest">
         <methods>
+          <include name="verifyAddClients"/>
           <include name="afterMethod"/>
-          <include name="verifyEditedNote"/>
           <include name="beforeMethod"/>
-          <include name="verifyNotesCreation"/>
         </methods>
-      </class> <!-- test.NotesTest -->
+      </class> <!-- test.ClientsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

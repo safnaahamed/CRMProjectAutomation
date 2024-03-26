@@ -26,7 +26,7 @@ public class ClientsPage {
 	@FindBy (xpath="//input[@name='country']") WebElement countryField;
 	@FindBy (xpath="//input[@name='phone']") WebElement phoneField;
 	@FindBy (xpath="//input[@name='website']") WebElement websiteField;
-	@FindBy (xpath="//input[@name='vat_number']//parent::div") WebElement vatNumberField;
+	@FindBy (xpath="//input[@name='vat_number']") WebElement vatNumberField;
 	@FindBy (xpath="//span[@id='select2-chosen-5']") WebElement currencyField;
 	@FindBy (xpath="//input[@id='s2id_autogen5_search']") WebElement typeCurrency;
 	@FindBy (xpath="//span[@class='select2-match']") WebElement currencyselected;
@@ -74,8 +74,8 @@ public class ClientsPage {
 		waitutility.waitForVisibility(phoneField);
 		phoneField.sendKeys(phone);
 		waitutility.waitForVisibility(websiteField);
-		elementutility.scrollElement(websiteField);
 		websiteField.sendKeys(website);
+		elementutility.scrollElement(vatNumberField);
 		waitutility.waitForVisibility(vatNumberField);
 		vatNumberField.sendKeys(VAT);
 		waitutility.waitForElementClick(currencyField);
