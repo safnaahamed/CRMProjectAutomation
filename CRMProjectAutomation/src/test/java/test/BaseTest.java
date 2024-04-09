@@ -47,10 +47,10 @@ public class BaseTest {
 		driver.quit();
 	}
 
-	public void takeScreenshotOnFailure(String string) throws IOException {
+	public void takeScreenshotOnFailure(String name) throws IOException {
 		String dateformat = new SimpleDateFormat("yyyy_MM_dd_hh_mm").format(new Date()); 
 		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String destination = Constants.screenshot_path + string + dateformat + ".png"; 
+		String destination = Constants.screenshot_path + name + dateformat + ".png"; 
 		File finaldestination = new File(destination);
 		FileUtils.copyFile(source, finaldestination);
 

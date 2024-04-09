@@ -1,4 +1,5 @@
 package utility;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,19 +11,17 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelRead {
-	
 
-
-public static Object[][] getDataFromExcel(String filePath, String sheetName) throws InvalidFormatException, IOException
-			 {
+	public static Object[][] getDataFromExcel(String filePath, String sheetName)
+			throws InvalidFormatException, IOException {
 		Object[][] data;
 		FileInputStream inputStream = new FileInputStream(new File(filePath));
 		Workbook wb = WorkbookFactory.create(inputStream);
 		Sheet s = wb.getSheet(sheetName);
 
 		// sheet range
-		int rowCount = s.getLastRowNum(); //4
-		int colCount = s.getRow(0).getLastCellNum();//2
+		int rowCount = s.getLastRowNum(); // 4
+		int colCount = s.getRow(0).getLastCellNum();// 2
 
 		// set data
 
@@ -34,24 +33,23 @@ public static Object[][] getDataFromExcel(String filePath, String sheetName) thr
 				}
 			}
 		}
-	
+
 		return data;
 	}
 
-public static String getDataFromExcel(String filePath, String sheetName, int rowNo, int colNo) throws InvalidFormatException, IOException
-{
-String data="";
-FileInputStream inputStream = new FileInputStream(new File(filePath));
-Workbook wb = WorkbookFactory.create(inputStream);
-Sheet s = wb.getSheet(sheetName);
+	public static String getDataFromExcel(String filePath, String sheetName, int rowNo, int colNo)
+			throws InvalidFormatException, IOException {
+		String data = "";
+		FileInputStream inputStream = new FileInputStream(new File(filePath));
+		Workbook wb = WorkbookFactory.create(inputStream);
+		Sheet s = wb.getSheet(sheetName);
 
-	if (!getCellValue(s, 0, colNo).equals("")) {
-		data=getCellValue(s, rowNo, colNo);
+		if (!getCellValue(s, 0, colNo).equals("")) {
+			data = getCellValue(s, rowNo, colNo);
+		}
+
+		return data;
 	}
-
-return data;
-}
-
 
 	private static String getCellValue(Sheet sheet, int row, int col) {
 		String value = "";
@@ -65,7 +63,5 @@ return data;
 		}
 		return value;
 	}
-
-
 
 }

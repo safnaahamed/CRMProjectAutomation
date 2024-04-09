@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-26T22:20:57 IST" name="Suite" finished-at="2024-03-26T22:21:22 IST" duration-ms="24837">
+  <suite started-at="2024-03-27T19:34:14 IST" name="Suite" finished-at="2024-03-27T19:36:30 IST" duration-ms="135800">
     <groups>
       <group name="regression">
-        <method signature="ProjectsTest.verifyDeletecProjects()[pri:4, instance:test.ProjectsTest@7ef82753]" name="verifyDeletecProjects" class="test.ProjectsTest"/>
-        <method signature="ProjectsTest.verifyEditProjects()[pri:3, instance:test.ProjectsTest@7ef82753]" name="verifyEditProjects" class="test.ProjectsTest"/>
-        <method signature="ProjectsTest.verifyProjectsCreation()[pri:1, instance:test.ProjectsTest@7ef82753]" name="verifyProjectsCreation" class="test.ProjectsTest"/>
-        <method signature="ProjectsTest.verifySearchProjects()[pri:2, instance:test.ProjectsTest@7ef82753]" name="verifySearchProjects" class="test.ProjectsTest"/>
+        <method signature="LoginTest.verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:test.LoginTest@350aac89]" name="verifyLogin" class="test.LoginTest"/>
+        <method signature="NotesTest.verifyDeleteNote()[pri:4, instance:test.NotesTest@7d9d0818]" name="verifyDeleteNote" class="test.NotesTest"/>
+        <method signature="NotesTest.verifyEditedNote()[pri:3, instance:test.NotesTest@7d9d0818]" name="verifyEditedNote" class="test.NotesTest"/>
+        <method signature="NotesTest.verifyNotesCreation()[pri:1, instance:test.NotesTest@7d9d0818]" name="verifyNotesCreation" class="test.NotesTest"/>
+        <method signature="NotesTest.verifySearchNote()[pri:2, instance:test.NotesTest@7d9d0818]" name="verifySearchNote" class="test.NotesTest"/>
+        <method signature="ProjectsTest.verifyDeletecProjects()[pri:4, instance:test.ProjectsTest@2b40ff9c]" name="verifyDeletecProjects" class="test.ProjectsTest"/>
+        <method signature="ProjectsTest.verifyEditProjects()[pri:3, instance:test.ProjectsTest@2b40ff9c]" name="verifyEditProjects" class="test.ProjectsTest"/>
+        <method signature="ProjectsTest.verifyProjectsCreation()[pri:1, instance:test.ProjectsTest@2b40ff9c]" name="verifyProjectsCreation" class="test.ProjectsTest"/>
+        <method signature="ProjectsTest.verifySearchProjects()[pri:2, instance:test.ProjectsTest@2b40ff9c]" name="verifySearchProjects" class="test.ProjectsTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="ProjectsTest.verifyDeletecProjects()[pri:4, instance:test.ProjectsTest@7ef82753]" name="verifyDeletecProjects" class="test.ProjectsTest"/>
-        <method signature="ProjectsTest.verifyEditProjects()[pri:3, instance:test.ProjectsTest@7ef82753]" name="verifyEditProjects" class="test.ProjectsTest"/>
-        <method signature="ProjectsTest.verifyProjectsCreation()[pri:1, instance:test.ProjectsTest@7ef82753]" name="verifyProjectsCreation" class="test.ProjectsTest"/>
+        <method signature="NotesTest.verifyDeleteNote()[pri:4, instance:test.NotesTest@7d9d0818]" name="verifyDeleteNote" class="test.NotesTest"/>
+        <method signature="NotesTest.verifyEditedNote()[pri:3, instance:test.NotesTest@7d9d0818]" name="verifyEditedNote" class="test.NotesTest"/>
+        <method signature="NotesTest.verifyNotesCreation()[pri:1, instance:test.NotesTest@7d9d0818]" name="verifyNotesCreation" class="test.NotesTest"/>
+        <method signature="ProjectsTest.verifyDeletecProjects()[pri:4, instance:test.ProjectsTest@2b40ff9c]" name="verifyDeletecProjects" class="test.ProjectsTest"/>
+        <method signature="ProjectsTest.verifyEditProjects()[pri:3, instance:test.ProjectsTest@2b40ff9c]" name="verifyEditProjects" class="test.ProjectsTest"/>
+        <method signature="ProjectsTest.verifyProjectsCreation()[pri:1, instance:test.ProjectsTest@2b40ff9c]" name="verifyProjectsCreation" class="test.ProjectsTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-03-26T22:20:57 IST" name="Test" finished-at="2024-03-26T22:21:22 IST" duration-ms="24837">
-      <class name="test.ProjectsTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:20:57 IST" name="beforeMethod" finished-at="2024-03-26T22:21:01 IST" duration-ms="3918" status="PASS">
+    <test started-at="2024-03-27T19:34:14 IST" name="Test" finished-at="2024-03-27T19:36:30 IST" duration-ms="135800">
+      <class name="test.NotesTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:28 IST" name="beforeMethod" finished-at="2024-03-27T19:34:35 IST" duration-ms="6967" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,22 +37,222 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyProjectsCreation()[pri:1, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:01 IST" name="verifyProjectsCreation" finished-at="2024-03-26T22:21:05 IST" duration-ms="3722" status="PASS">
+        <test-method signature="verifyNotesCreation()[pri:1, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:35 IST" name="verifyNotesCreation" finished-at="2024-03-27T19:34:39 IST" duration-ms="3876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNotesCreation -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:39 IST" name="afterMethod" finished-at="2024-03-27T19:34:39 IST" duration-ms="221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNotesCreation status=SUCCESS method=NotesTest.verifyNotesCreation()[pri:1, instance:test.NotesTest@7d9d0818] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:39 IST" name="beforeMethod" finished-at="2024-03-27T19:34:44 IST" duration-ms="4756" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySearchNote()[pri:2, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:44 IST" name="verifySearchNote" finished-at="2024-03-27T19:34:47 IST" duration-ms="3098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchNote -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:47 IST" name="afterMethod" finished-at="2024-03-27T19:34:47 IST" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchNote status=SUCCESS method=NotesTest.verifySearchNote()[pri:2, instance:test.NotesTest@7d9d0818] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:47 IST" name="beforeMethod" finished-at="2024-03-27T19:34:51 IST" duration-ms="3670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyEditedNote()[pri:3, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:51 IST" name="verifyEditedNote" finished-at="2024-03-27T19:34:56 IST" duration-ms="5498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditedNote -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:56 IST" name="afterMethod" finished-at="2024-03-27T19:34:57 IST" duration-ms="245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditedNote status=SUCCESS method=NotesTest.verifyEditedNote()[pri:3, instance:test.NotesTest@7d9d0818] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:34:57 IST" name="beforeMethod" finished-at="2024-03-27T19:35:05 IST" duration-ms="8524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyDeleteNote()[pri:4, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:35:05 IST" name="verifyDeleteNote" finished-at="2024-03-27T19:35:13 IST" duration-ms="8093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteNote -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.NotesTest@7d9d0818]" started-at="2024-03-27T19:35:13 IST" name="afterMethod" finished-at="2024-03-27T19:35:14 IST" duration-ms="225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeleteNote status=SUCCESS method=NotesTest.verifyDeleteNote()[pri:4, instance:test.NotesTest@7d9d0818] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.NotesTest -->
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.LoginTest@350aac89]" started-at="2024-03-27T19:34:15 IST" name="beforeMethod" finished-at="2024-03-27T19:34:26 IST" duration-ms="11023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:test.LoginTest@350aac89]" started-at="2024-03-27T19:34:26 IST" name="verifyLogin" data-provider="userData" finished-at="2024-03-27T19:34:28 IST" duration-ms="1944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.LoginTest@350aac89]" started-at="2024-03-27T19:34:28 IST" name="afterMethod" finished-at="2024-03-27T19:34:28 IST" duration-ms="273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginTest.verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:test.LoginTest@350aac89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.LoginTest -->
+      <class name="test.ClientsTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ClientsTest@3e08ff24]" started-at="2024-03-27T19:35:56 IST" name="beforeMethod" finished-at="2024-03-27T19:36:11 IST" duration-ms="15117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAddClients()[pri:1, instance:test.ClientsTest@3e08ff24]" started-at="2024-03-27T19:36:11 IST" name="verifyAddClients" finished-at="2024-03-27T19:36:21 IST" duration-ms="10273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddClients -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ClientsTest@3e08ff24]" started-at="2024-03-27T19:36:21 IST" name="afterMethod" finished-at="2024-03-27T19:36:21 IST" duration-ms="173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddClients status=SUCCESS method=ClientsTest.verifyAddClients()[pri:1, instance:test.ClientsTest@3e08ff24] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ClientsTest@3e08ff24]" started-at="2024-03-27T19:36:21 IST" name="beforeMethod" finished-at="2024-03-27T19:36:27 IST" duration-ms="5707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySearchClient()[pri:1, instance:test.ClientsTest@3e08ff24]" started-at="2024-03-27T19:36:27 IST" name="verifySearchClient" finished-at="2024-03-27T19:36:30 IST" duration-ms="2799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchClient -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ClientsTest@3e08ff24]" started-at="2024-03-27T19:36:30 IST" name="afterMethod" finished-at="2024-03-27T19:36:30 IST" duration-ms="174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchClient status=SUCCESS method=ClientsTest.verifySearchClient()[pri:1, instance:test.ClientsTest@3e08ff24] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.ClientsTest -->
+      <class name="test.ProjectsTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:14 IST" name="beforeMethod" finished-at="2024-03-27T19:35:20 IST" duration-ms="6743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyProjectsCreation()[pri:1, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:20 IST" name="verifyProjectsCreation" finished-at="2024-03-27T19:35:25 IST" duration-ms="4795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProjectsCreation -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:05 IST" name="afterMethod" finished-at="2024-03-26T22:21:05 IST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:25 IST" name="afterMethod" finished-at="2024-03-27T19:35:25 IST" duration-ms="239" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProjectsCreation status=SUCCESS method=ProjectsTest.verifyProjectsCreation()[pri:1, instance:test.ProjectsTest@7ef82753] output={null}]]]>
+                <![CDATA[[TestResult name=verifyProjectsCreation status=SUCCESS method=ProjectsTest.verifyProjectsCreation()[pri:1, instance:test.ProjectsTest@2b40ff9c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:05 IST" name="beforeMethod" finished-at="2024-03-26T22:21:07 IST" duration-ms="2407" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:25 IST" name="beforeMethod" finished-at="2024-03-27T19:35:28 IST" duration-ms="3065" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,22 +263,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySearchProjects()[pri:2, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:07 IST" name="verifySearchProjects" finished-at="2024-03-26T22:21:10 IST" duration-ms="2396" status="PASS">
+        <test-method signature="verifySearchProjects()[pri:2, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:28 IST" name="verifySearchProjects" finished-at="2024-03-27T19:35:32 IST" duration-ms="3608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchProjects -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:10 IST" name="afterMethod" finished-at="2024-03-26T22:21:10 IST" duration-ms="155" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:32 IST" name="afterMethod" finished-at="2024-03-27T19:35:32 IST" duration-ms="263" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySearchProjects status=SUCCESS method=ProjectsTest.verifySearchProjects()[pri:2, instance:test.ProjectsTest@7ef82753] output={null}]]]>
+                <![CDATA[[TestResult name=verifySearchProjects status=SUCCESS method=ProjectsTest.verifySearchProjects()[pri:2, instance:test.ProjectsTest@2b40ff9c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:10 IST" name="beforeMethod" finished-at="2024-03-26T22:21:12 IST" duration-ms="2433" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:32 IST" name="beforeMethod" finished-at="2024-03-27T19:35:36 IST" duration-ms="4059" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,22 +289,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyEditProjects()[pri:3, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:12 IST" name="verifyEditProjects" finished-at="2024-03-26T22:21:16 IST" duration-ms="3221" status="PASS">
+        <test-method signature="verifyEditProjects()[pri:3, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:36 IST" name="verifyEditProjects" finished-at="2024-03-27T19:35:41 IST" duration-ms="5098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEditProjects -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:16 IST" name="afterMethod" finished-at="2024-03-26T22:21:16 IST" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:41 IST" name="afterMethod" finished-at="2024-03-27T19:35:42 IST" duration-ms="252" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyEditProjects status=SUCCESS method=ProjectsTest.verifyEditProjects()[pri:3, instance:test.ProjectsTest@7ef82753] output={null}]]]>
+                <![CDATA[[TestResult name=verifyEditProjects status=SUCCESS method=ProjectsTest.verifyEditProjects()[pri:3, instance:test.ProjectsTest@2b40ff9c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:16 IST" name="beforeMethod" finished-at="2024-03-26T22:21:19 IST" duration-ms="3450" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:42 IST" name="beforeMethod" finished-at="2024-03-27T19:35:47 IST" duration-ms="5494" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,15 +315,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyDeletecProjects()[pri:4, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:19 IST" name="verifyDeletecProjects" finished-at="2024-03-26T22:21:22 IST" duration-ms="2606" status="PASS">
+        <test-method signature="verifyDeletecProjects()[pri:4, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:47 IST" name="verifyDeletecProjects" finished-at="2024-03-27T19:35:56 IST" duration-ms="8445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeletecProjects -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectsTest@7ef82753]" started-at="2024-03-26T22:21:22 IST" name="afterMethod" finished-at="2024-03-26T22:21:22 IST" duration-ms="167" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ProjectsTest@2b40ff9c]" started-at="2024-03-27T19:35:56 IST" name="afterMethod" finished-at="2024-03-27T19:35:56 IST" duration-ms="216" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDeletecProjects status=SUCCESS method=ProjectsTest.verifyDeletecProjects()[pri:4, instance:test.ProjectsTest@7ef82753] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDeletecProjects status=SUCCESS method=ProjectsTest.verifyDeletecProjects()[pri:4, instance:test.ProjectsTest@2b40ff9c] output={null}]]]>
               </value>
             </param>
           </params>
